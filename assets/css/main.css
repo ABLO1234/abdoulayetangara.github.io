@@ -404,13 +404,17 @@ input, select, textarea {
 		}
 		
 		/* Sur mobile, tout revient en noir */
+		/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+		/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+		/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+		/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 		#wrapper section > header h1,
 		#wrapper section > header h2,
 		#wrapper section > header h3,
 		#wrapper section > header h4,
 		#wrapper section > header h5,
 		#wrapper section > header h6 {
-			color: #ffffff;
+			color: black; /*////////////////////////////////////Vu que les titres sur mobile n'apparaissais il y avait un problème ici//////////////////////////////////////////////////////////////////*/
 		}
 	}
 	sub {
@@ -2692,6 +2696,18 @@ input, select, textarea {
 				margin: 0 0 3rem 0;
 			}
 
+			@media screen and (max-width: 1152px) {
+
+				ul.items > li > a,
+				ul.items > li > .icons > li > a  {
+					color: rgb(80, 78, 78);
+				}
+
+				
+			}
+
+			
+
 				ul.items > li > h3 {
 					margin: 0 0 1rem 0;
 				}
@@ -3061,6 +3077,14 @@ input, select, textarea {
 			width: calc(50% - 1.25rem);
 		}
 
+/* 
+		.gallery ul {
+			background-color: red;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		} */
+
 			.gallery a img {
 				display: block;
 				height: 25vw;
@@ -3212,6 +3236,15 @@ input, select, textarea {
 
 		@media screen and (max-width: 1152px) {
 
+			/* **********************************************
+			********************************************************************************************
+			*******************************J'ai mis gallery ul ici *************************************************************
+			********************************************************************************************
+			******************************************************************************************** */
+			.gallery ul {
+				margin: 1.2rem;
+			}
+
 			.gallery a img {
 				height: 20rem;
 			}
@@ -3236,6 +3269,8 @@ input, select, textarea {
 				margin: -0.625rem 0 0 -0.625rem;
 				width: calc(100% + 0.625rem);
 			}
+
+			
 
 				.gallery a {
 					margin: 0.625rem 0 0 0.625rem;
@@ -3458,9 +3493,9 @@ input, select, textarea {
 
 
 
-				#wrapper section > header ul.actions {
-					justify-content: flex-end;
-				}
+			#wrapper section > header ul.actions {
+				justify-content: flex-end;
+			}
 
 			#wrapper section > .content {
 				grid-area: content;
@@ -3923,7 +3958,7 @@ input, select, textarea {
 					padding: 3rem 2rem;
 				}
 
-					#wrapper > section > .content > section {
+					#wrapper > section > .content > .gallery {
 						margin: 3rem 0;
 					}
 
@@ -4120,7 +4155,7 @@ input, select, textarea {
 		height: 2px;
 		bottom: -5px;
 		left: 0;
-		background-color: #43d9b8;
+		background-color: #2c3e50;
 		transition: width 0.3s ease;
 	  }
 	  
@@ -4155,12 +4190,16 @@ input, select, textarea {
 	}
 
 	@keyframes blink {
-			0% { color: white; opacity: 1; }
-			50% { color: red; opacity: 0; }
-			100% { color: white; opacity: 1; }
-		}
+		0% { color: white; opacity: 1; }
+		50% { color: red; opacity: 0; }
+		100% { color: white; opacity: 1; }
+	}
+
 	
-		
-		.blink {
-			animation: blink 0.15s infinite;
-		}
+	.blink {
+		animation: blink 0.15s infinite;
+	}
+
+	
+
+	
